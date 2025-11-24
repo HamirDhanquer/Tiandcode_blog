@@ -13,6 +13,22 @@
 			"extendFeatures": {
 				"charDetails": false
 			}
+		},
+		{
+			"type": "totvs_language_web_debug",
+			"request": "launch",
+			"name": "Smart Client Web Debug",
+			"program": "${command:AskForProgramName}",
+			"isMultiSession": true,
+			"enableTableSync": true,
+			"enableMultiThread": true,
+			"smartclientUrl": "https://179.131.12.229:3379/webapp/"
 		}
-	]
+	],
+	"lastPrograms": [
+		{
+			"label": "u_EXECUTIL"
+		}
+	],
+	"lastProgramExecuted": "u_EXECUTIL"
 }
