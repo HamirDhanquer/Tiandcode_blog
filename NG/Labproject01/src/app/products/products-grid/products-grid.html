@@ -1,0 +1,23 @@
+<div class="products-container">
+    <p>Total products: {{ products().length }}</p>
+
+    <div class="product-grid" >
+        @for (product of products(); track product.id) {
+            <app-product-card/>
+        } @empty {
+            <div class="empty-state">
+                <mat-icon>inventory_2</mat-icon>
+                <p>No products available.</p>
+            </div>
+        }
+    </div>
+
+    <!--
+        <div class="product-grid" >
+            <div class="product-item" *ngFor="let product of products(); trackBy: product.id" >
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+            </div>
+        </div>
+    -->
+</div>
