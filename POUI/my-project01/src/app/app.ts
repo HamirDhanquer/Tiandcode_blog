@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Lista } from './pages/lista/lista';
 
 import {
   PoMenuItem,
@@ -14,7 +15,8 @@ import {
     CommonModule,
     PoToolbarModule,
     PoMenuModule,
-    PoPageModule
+    PoPageModule,
+    Lista
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
