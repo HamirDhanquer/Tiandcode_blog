@@ -14,18 +14,22 @@ import {
 export class Lista {
 
   minhaLista: string = "Minha Lista, PO UI, Angular, TypeScript";
-  Texto = output<string>();
-  Texto2 = input<string>("TESTE");
+  //Texto = output<string>();
+  //Texto2 = input<string>("TESTE");
 
   ngOnInit() {
   
    
-    console.log(this.minhaLista + this.Texto2());
+   // console.log(this.minhaLista + this.Texto2());
+  }
+
+  NovaLista(){
+    this.minhaLista = "Nova Lista, SQL, MongoDB, PostgreSQL";
   }
 
   NovoTexto() {
     
-    this.Texto.emit("Novo Texto");
+   // this.Texto.emit("Novo Texto");
     //this.Texto = "Novo Texto";
   }
 }
