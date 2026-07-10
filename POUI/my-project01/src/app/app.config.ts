@@ -1,11 +1,29 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 
+
+//import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+
+//import { PoHttpRequestModule } from '@po-ui/ng-components';
+
+
+//import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+
+import { PoHttpRequestModule } from '@po-ui/ng-components';
+
+import { ApplicationConfig, importProvidersFrom, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+
+//import { PoHttpRequestModule } from '@po-ui/ng-components';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
-  ]
+    provideRouter(routes),
+    importProvidersFrom([PoHttpRequestModule]),
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideHttpClient(withInterceptorsFromDi())
+  ],
+  
 };
