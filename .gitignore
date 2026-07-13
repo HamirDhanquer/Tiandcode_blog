@@ -7,3 +7,7 @@
 /POUI/my-project02/.angular
 /NG/Labproject01/.vscode
 /NG/Labproject01/node_modules
+
+.agents/
+AGENTS.md
+CLAUDE.md
