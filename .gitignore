@@ -1,12 +1,12 @@
-/.vscode
-/.vscode/.advpl/_binary_class.prw
-/.vscode/.advpl/_binary_functions.prw
-/POUI/my-project01/.vscode
-/POUI/my-project01/node_modules
-/POUI/my-project02/node_modules
-/POUI/my-project02/.angular
-/NG/Labproject01/.vscode
-/NG/Labproject01/node_modules
+.vscode
+.vscode/.advpl/_binary_class.prw
+.vscode/.advpl/_binary_functions.prw
+POUI/my-project01/.vscode
+POUI/my-project01/node_modules
+POUI/my-project02/node_modules
+POUI/my-project02/.angular
+NG/Labproject01/.vscode
+NG/Labproject01/node_modules
 
 .agents/
 AGENTS.md
