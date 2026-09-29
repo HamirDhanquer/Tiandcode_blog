@@ -1,4 +1,4 @@
-#include "Include.ch"
+#include "Totvs.ch"
 #include "Topconn.ch"
 
 /*/{Protheus.doc} zBg2601
@@ -21,7 +21,7 @@ User Function zBg2601()
     oTempTable := FWTemporaryTable():New( cAlias )
 
     // Array com os campos da tabela
-    aadd(aFields, {"DATA", "D", 8 , 0})
+    aadd(aFields, {"DTEMIS", "D", 8 , 0})
     aadd(aFields, {"CONTRATO"   , "C", 30, 0})
     aadd(aFields, {"VALOR"  , "N", 3 , 1})
 
@@ -29,7 +29,7 @@ User Function zBg2601()
     oTempTable:SetFields( aFields )
 
     // Adiciona os indices ao objeto
-    oTempTable:AddIndex("1", {"DATA"} )
+    oTempTable:AddIndex("1", {"DTEMIS"} )
 
     // Criacao da tabela temporaria
     oTempTable:Create()
@@ -37,7 +37,7 @@ User Function zBg2601()
     // Incluir Registros na tabela temporaria
     If RecLock(cAlias,.T.)
 
-       (cAlias)->DATA := Date()
+       (cAlias)->DTEMIS := Date()
        (cAlias)->CONTRATO := '123456789'
        (cAlias)->VALOR := 100.00
        cAlias>(MsUnlock())

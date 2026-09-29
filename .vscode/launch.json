@@ -22,7 +22,7 @@
 			"isMultiSession": true,
 			"enableTableSync": true,
 			"enableMultiThread": true,
-			"smartclientUrl": "https://179.131.12.229:3379/webapp/"
+			"smartclientUrl": "http://3.19.96.14:4322/webapp/"
 		}
 	],
 	"lastPrograms": [
