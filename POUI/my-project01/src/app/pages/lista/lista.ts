@@ -14,7 +14,6 @@ import {
 export class Lista {
 
   minhaLista: string = "Minha Lista, PO UI, Angular, TypeScript";
-  listaFrutas 
   //Texto = output<string>();
   //Texto2 = input<string>("TESTE");
 
